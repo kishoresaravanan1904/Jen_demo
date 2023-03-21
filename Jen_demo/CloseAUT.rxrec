@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="a8c26241-c6ee-4766-a56d-4c4724b058c2"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="Jen_demo">
+	</codegen>
+	<variables>
+		<var
+		id="1d679ebd-00d4-48d9-b27b-4233911b9628"
+		name="CloseAutProcessIDVar">
+			-1
+		</var>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="500ms"
+		method="CloseWindowByProcessID"
+		optional="False"
+		searchpropertyid="cd8db92c-b25b-4a3a-963e-4177b603b549">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="ProcessID"
+				variable="CloseAutProcessIDVar">
+				</binding>
+			</bindings>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="8a670fee-49b1-40b1-91ec-560f747d755c"
+	name="Jen_demoRepository"
+	relativepath="Jen_demoRepository.rxrep">
+		<codegen
+		classname="Jen_demoRepository"
+		namespace="Jen_demo">
+		</codegen>
+		<rootfolder
+		id="d06f08b9-962a-4f59-ba88-71bd069571cc"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
